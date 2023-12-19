@@ -234,35 +234,29 @@ class RscDisplayMain: RscStandardDisplay
 			class Controls : Controls
 			{
 				class Campaigns;
-				class joinTraining1 : Campaigns {
+				class joinMain1 : Campaigns {
 					idc = -1;
-					text = "l6AA Training Server 1";
+					text = "16AA Main Operations";
 					colorBackground[] = {0.596,0.11,0.11,1};
 					colorBackgroundActive[] = {0.969,0.722,0,1};
 					colorFocused[] = {1,1,1,1};
-					tooltip = "5200";
+					tooltip = "16AA Main Operations";
 					y = "(3 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
 					action = "";
-					onbuttonclick = "connectToServer ['172.93.183.40', 5200, ''];";
+					onbuttonclick = "connectToServer ['connect.16aa.net', 2302, ''];";
 					Onload = "";
 				};
-				class joinTraining2 : joinTraining1 {
-					text = "l6AA Training Server 2";
-					tooltip = "5500";
-					y = "(4 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
-					onbuttonclick = "connectToServer ['172.93.183.40', 5500, ''];";
-				};
-				class joinOps : joinTraining1 {
-					text = "l6AA Operations Server";
-					tooltip = "5100";
+				class joinBackup : joinMain1 {
+					text = "16AA Backup Server";
+					tooltip = "16AA Backup Server";
 					y = "(5 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
-					onbuttonclick = "connectToServer ['172.93.183.40', 5100, ''];";
+					onbuttonclick = "connectToServer ['backup.connect.16aa.net', 2302, ''];";
 				};
-				class joinPipeline : joinTraining1 {
-					text = "l6AA Pipeline Server";
-					tooltip = "5400 (l6AA Pipeline Modpack Required)";
+				class joinTraining : joinMain1 {
+					text = "16AA Training Server";
+					tooltip = "Training Server";
 					y = "(6 *     1.5) *     (pixelH * pixelGrid * 2) +     (pixelH)";
-					onbuttonclick = "connectToServer ['172.93.183.40', 5400, ''];";
+					onbuttonclick = "connectToServer ['connect.16aa.net', 2402, ''];";
 				};
 			};
 		};
