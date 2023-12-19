@@ -536,7 +536,7 @@ class CfgMainMenuSpotlight
 		text = "Main Operations Server";
 		picture = "l6AA_branding\data\Main.paa";
 		action = "connectToServer ['connect.16aa.net', 2302, '']";
-		actionText = "l6AA Operations Server (5100)";
+		actionText = "l6AA Main Operations Server (5100)";
 		condition = "true";
 	};
 	class l6AA_Backup
@@ -544,7 +544,7 @@ class CfgMainMenuSpotlight
 		text = "Backup Server";
 		picture = "l6AA_branding\data\Backup.paa";
 		action = "connectToServer ['backup.connect.16aa.net', 2302, '']";
-		actionText = "l6AA Pipeline Server (5400)";
+		actionText = "l6AA Backup Server (5400)";
 		condition = "true";
 	};
 };
