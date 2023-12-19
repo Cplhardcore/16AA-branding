@@ -279,8 +279,8 @@ class RscDisplayMain: RscStandardDisplay
 			w = "4 *     (pixelW * pixelGrid * 2)";
 			y = "safezoneY + 2 * 	(pixelH * pixelGrid * 2)";
 
-			tooltip = "l6AA Website";
-			url = "https://www.taskforceexodus.com/";
+			tooltip = "16AA Website";
+			url = "https://16aa.net//";
 			onMouseEnter = "";
 			onSetFocus = "";
 			onMouseExit = "";
@@ -534,7 +534,7 @@ class CfgMainMenuSpotlight
 	class l6AA_Ops
 	{
 		text = "Main Operations Server";
-		picture = "l6AA_branding\data\ops.paa";
+		picture = "l6AA_branding\data\Main.paa";
 		action = "connectToServer ['connect.16aa.net', 2302, '']";
 		actionText = "l6AA Operations Server (5100)";
 		condition = "true";
@@ -542,7 +542,7 @@ class CfgMainMenuSpotlight
 	class l6AA_Backup
 	{
 		text = "Backup Server";
-		picture = "l6AA_branding\data\pipe.paa";
+		picture = "l6AA_branding\data\Backup.paa";
 		action = "connectToServer ['backup.connect.16aa.net', 2302, '']";
 		actionText = "l6AA Pipeline Server (5400)";
 		condition = "true";
@@ -550,7 +550,7 @@ class CfgMainMenuSpotlight
 };
 class RscBackgroundLogo: RscPictureKeepAspect
 {
-	text="\l6AA_branding\logo\l6AA_logo.paa";
+	text="\l6AA_branding\logo\l6AA_Logo.paa";
 	x="0.33375 * safezoneW";
 	y="0.29 * safezoneH";
 	w="0.3325 * safezoneW";
